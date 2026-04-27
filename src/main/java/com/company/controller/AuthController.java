@@ -31,7 +31,7 @@ public class AuthController {
 
         boolean res = authService.login(new AuthDTO("", phoneNumber, password, ""));
         if (res) {
-//            mainController.menu();
+            mainController.menu();
         } else {
             System.out.println("wrong");
         }

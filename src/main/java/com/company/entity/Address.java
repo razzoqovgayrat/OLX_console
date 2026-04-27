@@ -2,15 +2,17 @@ package com.company.entity;
 
 import lombok.*;
 
+import java.io.Serializable;
+
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString(callSuper = true)
-public class Address {
+public class Address implements Serializable {
 
     private String city;
     private String street;
-    private String ApartNumber;
+    private int apartNumber;
 
 }

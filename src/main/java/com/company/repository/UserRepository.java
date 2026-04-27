@@ -22,7 +22,7 @@ public class UserRepository {
 
     public void saveList(List<User> list) {
         try {
-            FileOutputStream fileOutputStream = new FileOutputStream("src/java/com/company/repository/user.txt");
+            FileOutputStream fileOutputStream = new FileOutputStream("src/main/java/com/company/repository/user.txt");
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
             objectOutputStream.writeObject(list);
             fileOutputStream.close();
@@ -31,7 +31,7 @@ public class UserRepository {
 
     public List<User> getList() {
         try {
-            FileInputStream fileInputStream = new FileInputStream("src/java/com/company/repository/user.txt");
+            FileInputStream fileInputStream = new FileInputStream("src/main/java/com/company/repository/user.txt");
             ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
             return (List<User>) objectInputStream.readObject();
         } catch (IOException | ClassNotFoundException ignored) {}
@@ -57,8 +57,9 @@ public class UserRepository {
     {
         List<User> list = getList();
         if (list.isEmpty()) {
-            list.add(new User(UUID.randomUUID().toString(), "Ali Aliyev", "934445566", "Cat", "alibek@gmail.com"));
-            saveList(list);
+            List<User> users = new ArrayList<>();
+            users.add(new User(UUID.randomUUID().toString(), "Ali Aliyev", "934445566", "Cat", "alibek@gmail.com"));
+            saveList(users);
         }
     }
 }

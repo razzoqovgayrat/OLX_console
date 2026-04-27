@@ -18,4 +18,9 @@ public class Utils {
         System.out.print(text + ": ");
         return scannerNum.nextInt();
     }
+
+    public static double getDouble(String text) {
+        System.out.print(text + ": ");
+        return scannerNum.nextDouble();
+    }
 }
