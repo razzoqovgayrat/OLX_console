@@ -10,7 +10,6 @@ import java.io.Serializable;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString(exclude = {"id"})
 public class Post implements Serializable {
 
     private String id;

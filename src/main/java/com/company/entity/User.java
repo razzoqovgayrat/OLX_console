@@ -8,7 +8,6 @@ import java.io.Serializable;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString(of = {"fullName", "phoneNumber"})
 public class User implements Serializable {
 
     private String id;

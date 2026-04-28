@@ -4,19 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9502829-1091-405c-a717-f9f427e37107" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/dto/AddressDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/dto/PostDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/repository/PostRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/repository/post.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/service/PostService.java" afterDir="false" />
+    <list default="true" id="b9502829-1091-405c-a717-f9f427e37107" name="Changes" comment="second commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/dto/FilterDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/entity/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/entity/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/entity/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/entity/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/enums/PostType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/enums/PostType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/enums/HomeType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/enums/HomeType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/repository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/repository/PostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/repository/user.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/repository/user.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/PostService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Record" />
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -41,12 +39,12 @@
     &quot;assignee&quot;: &quot;razzoqovgayrat&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/razzoqovgayrat/OLX_console.git",
-    "accountId": "a653438a-c93a-41e2-bf75-dd8be31fb1bd"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/razzoqovgayrat/OLX_console.git&quot;,
+    &quot;accountId&quot;: &quot;a653438a-c93a-41e2-bf75-dd8be31fb1bd&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -65,6 +63,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
@@ -97,7 +96,8 @@
       <workItem from="1777276619199" duration="12201000" />
       <workItem from="1777294053467" duration="292000" />
       <workItem from="1777294359565" duration="1032000" />
-      <workItem from="1777295403194" duration="5574000" />
+      <workItem from="1777295403194" duration="8808000" />
+      <workItem from="1777353678610" duration="7290000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -123,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777298198479</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="second commit">
+      <option name="closed" value="true" />
+      <created>1777302966885</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1777302966885</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +153,7 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
   </component>
 </project>

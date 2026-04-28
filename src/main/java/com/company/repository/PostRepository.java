@@ -44,9 +44,10 @@ public class PostRepository {
     {
         List<Post> list = getList();
         if (list.isEmpty()) {
+            List<Post> posts = new ArrayList<>();
             Address address = new Address("Tashkent", "Alisher Navoiy", 45);
-            list.add(new Post(UUID.randomUUID().toString(), "abc", HomeType.KVARTIRA, address, 80.7, 3, 500, PostType.RENT, "Only boys"));
-            saveList(list);
+            posts.add(new Post(UUID.randomUUID().toString(), "abc", HomeType.KVARTIRA, address, 80.7, 3, 500, PostType.RENT, "Only boys"));
+            saveList(posts);
         }
     }
 

@@ -8,7 +8,6 @@ import java.io.Serializable;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString(callSuper = true)
 public class Address implements Serializable {
 
     private String city;
